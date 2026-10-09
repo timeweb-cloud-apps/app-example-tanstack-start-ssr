@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family:
+    system-ui,
+    -apple-system,
+    Segoe UI,
+    Roboto,
+    sans-serif;
+}
+
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  border-bottom: 1px solid #e5e7eb;
+  padding: 1rem 1.5rem;
+}
+
+.nav {
+  max-width: 48rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav a {
+  color: #374151;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: #111827;
+}
+
+.nav a.active:not(.logo) {
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.logo {
+  font-weight: 700;
+  margin-right: auto;
+}
+
+.main {
+  flex: 1;
+  max-width: 48rem;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  width: 100%;
+}
+
+h1 {
+  font-size: 1.75rem;
+  margin: 0 0 0.75rem;
+}
+
+p {
+  color: #374151;
+  line-height: 1.6;
+}
+
+.lead {
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.5rem 1rem;
+  margin: 0 0 1.5rem;
+}
+
+.info dt {
+  color: #6b7280;
+}
+
+.info dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+code {
+  background: #f3f4f6;
+  padding: 0.15rem 0.4rem;
+  border-radius: 0.25rem;
+  font-size: 0.9em;
+}
+
+.main a {
+  color: #2563eb;
+}
